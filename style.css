@@ -50,6 +50,10 @@ body {
     height: 40vh;
 }
 
+.education ul li {
+    font-weight: bold;
+}
+
 i {
     font-size: 3rem;
 }
@@ -114,6 +118,7 @@ footer {
 @media only screen and (max-width:770px) {
     .header {
         font-size: 15px;
+        text-align: center;
     }
 
     .right {
