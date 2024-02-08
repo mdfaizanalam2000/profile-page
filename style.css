@@ -1,0 +1,143 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    background-image: url("./header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+}
+
+#name,
+#domain {
+    font-weight: 500;
+    color: yellowgreen;
+}
+
+.about {
+    display: flex;
+    height: 50vh;
+}
+
+.left {
+    flex-basis: 35%;
+    background-image: url("./profile.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.right {
+    flex-basis: 60%;
+    margin-left: 5%;
+}
+
+.heading {
+    color: yellowgreen;
+    margin: 1rem 0;
+    font-size: x-large;
+}
+
+.education {
+    height: 40vh;
+}
+
+i {
+    font-size: 3rem;
+}
+
+.col-md-2 {
+    text-align: center;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: gray;
+    padding: 5px 0;
+}
+
+.col-md-2:hover {
+    background-color: yellowgreen;
+}
+
+.contact-left i {
+    color: yellowgreen;
+    font-size: small;
+}
+
+.contact-left {
+    flex-basis: 40%;
+}
+
+.contact-right {
+    flex-basis: 55%;
+    margin-left: 2%;
+}
+
+.contact {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+form input,
+textarea {
+    margin: 5px 0;
+    outline: none;
+}
+
+form button {
+    border: none;
+    background-color: yellowgreen;
+    width: 5rem;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: gray;
+    height: 3rem;
+    padding: 5px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width:770px) {
+    .header {
+        font-size: 15px;
+    }
+
+    .right {
+        margin-left: 0;
+    }
+
+    .education {
+        height: auto;
+    }
+
+    .col-6 {
+        margin: 5px auto;
+        width: 90%;
+    }
+
+    .about,
+    .contact {
+        flex-direction: column;
+    }
+
+    .left,
+    .right,
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+}
